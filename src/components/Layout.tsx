@@ -89,7 +89,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
-          <span style={{ color: '#fff', fontSize: '16px', fontWeight: 'bold' }}>管理系统</span>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <img src="/signalx-logo.svg" alt="logo" style={{ width: 28, height: 28 }} />
+            <span style={{ color: '#fff', fontSize: '16px', fontWeight: 'bold' }}>SignalxAdmin</span>
+          </div>
           <Button
             type="text"
             icon={<MenuOutlined />}
@@ -109,7 +112,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           placement="left"
           onClose={() => setMobileMenuOpen(false)}
           open={mobileMenuOpen}
-          bodyStyle={{ padding: 0 }}
+          styles={{ body: { padding: 0 } }}
         >
           <Menu
             mode="inline"
@@ -137,14 +140,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }}
       >
         <div style={{
-          padding: '20px 16px',
-          color: '#fff',
-          textAlign: 'center',
-          fontSize: '16px',
-          fontWeight: 'bold',
-          borderBottom: '1px solid rgba(255,255,255,0.1)'
+          padding: '16px',
+          borderBottom: '1px solid rgba(255,255,255,0.1)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '8px'
         }}>
-          管理系统
+          <img src="/signalx-logo.svg" alt="logo" style={{ width: 32, height: 32, flexShrink: 0 }} />
+          <span style={{ color: '#fff', fontSize: '16px', fontWeight: 'bold' }}>SignalxAdmin</span>
         </div>
         <Menu
           mode="inline"

@@ -159,7 +159,7 @@ const Logo: React.FC<LogoProps> = ({
             color: textColor
           }}
         >
-          PolyHermes
+          SignalxAdmin
         </span>
       )}
     </div>
