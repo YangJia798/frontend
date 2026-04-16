@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { Card, Form, Input, Button, message, Typography } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons'
 import { useTranslation } from 'react-i18next'
@@ -98,11 +98,6 @@ const Login: React.FC = () => {
             >
               {t('login.title')}
             </Button>
-          </Form.Item>
-          <Form.Item style={{ marginBottom: 0, textAlign: 'right' }}>
-            <Link to="/reset-password" style={{ fontSize: isMobile ? '14px' : '13px' }}>
-              {t('login.forgotPassword')}
-            </Link>
           </Form.Item>
         </Form>
       </Card>
